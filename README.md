@@ -1,80 +1,80 @@
 # FAC_Revision-quiz
-Git
-Why do we use Git?
+## Git
+#### Why do we use Git?<br>
 To control and track our project code.
 
-What’s the difference between Git and GitHub?
+#### What’s the difference between Git and GitHub?
 Git is a control system let you manage the project code history, and GitHub is cloud- base hosting service for you let you manage git repos.
 
-What happens when you clonea repository?
+#### What happens when you clonea repository?
 You clone a full copy of all the repository to your chosen location.
 
-What happens when we do git pull origin main
+#### What happens when we do git pull origin main
 Pull changes from the origin remote, master branch and merge them to the local checked-out branch.
 
-How do we create a new branch on our local machine?
+#### How do we create a new branch on our local machine?
 Open the terminal in the project directory and enter”git checkout -b “branch name”
 
-How do we control which changes will be included in the next commit?
+#### How do we control which changes will be included in the next commit?
 Use “git add “the changed file name”
 
-When mightgit add .be inappropriate?
-How do we make sure our local changes don’t conflict with main?
+#### When might git add .be inappropriate?
+#### How do we make sure our local changes don’t conflict with main?
 create a branch that separate from the main to work on
 
-What does git push origin [branch-name]do?
+#### What does git push origin [branch-name]do?
 It will create a Pull Request under the [branch-name]
 
-Why do we make pull requests instead of just changing main directly?
+#### Why do we make pull requests instead of just changing main directly?
 To carefully review the code and create different version to track before merge the file into the main
 
-Why should you review your teammates’ pull requests?
+#### Why should you review your teammates’ pull requests?
 To double confirm there is no bug and understand other people’s work
 
 
-HTML
-Why is accessibility important?
+## HTML
+#### Why is accessibility important?
 For people with disabilities can access the same things as those without a disability.
 
-How can you quickly find simple accessibility problems?
+#### How can you quickly find simple accessibility problems?
 Use lighthouse assessment from Chrome Dev tool
 
-What is semantic HTML?
+#### What is semantic HTML?
 Semantic HTML is a coding style. It is the use of HTML markup to reinforce the semantics or meaning of the content.
 
-Why is it important to use the “correct” semantic element?
+#### Why is it important to use the “correct” semantic element?
 It helps structure the code we create, making it more readable and easier to maintain.
 
-What is the
-element used for?
+#### What is the "form" element used for?
 "form"represents a document section containing interactive controls for submitting information.
 
 
-CSS
-How would you use CSS variables to make a reusable colour palette?
-How would you use flexbox to make elements sit on a single line?
+## CSS
+#### How would you use CSS variables to make a reusable colour palette?
+#### How would you use flexbox to make elements sit on a single line?
 Line{ Flex-direction:row; }
-How would you use grid to make a layout that automatically adds columns as the screen gets wider?
+#### How would you use grid to make a layout that automatically adds columns as the screen gets wider?
 grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-Why is it important to create a responsive design?
+#### Why is it important to create a responsive design?
 Because nowadays people use all different devices with different sizes to browse the web pages How would you structure your CSS to make it “mobile-first”?
-Javascript
-Why should we avoid using var to define variables?
+
+## Javascript
+#### Why should we avoid using var to define variables?
 They can easily be accessed by outside manipulation
 
-How might you make a long, complex chunk of code easier to read?
+#### How might you make a long, complex chunk of code easier to read?
 break down long codes into small functions
 
-What is a “callback”?
+#### What is a “callback”?
 A callback function is a function passed into another function as an argument
 
 
-Array methods
-How would you use array.map() to create a new array with transformed values?
-How would you use array.filter() to create a new array with certain values removed?
-How would you use array.find() to get a single value from an array?
+## Array methods
+#### How would you use array.map() to create a new array with transformed values?
+#### How would you use array.filter() to create a new array with certain values removed?
+#### How would you use array.find() to get a single value from an array?
 
-Promises & fetch
+## Promises & fetch
 What is a promise?
 A promise is an object that may produce a single value some time in the future
 
