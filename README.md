@@ -22,7 +22,7 @@ Use “git add “the changed file name”
 #### How do we make sure our local changes don’t conflict with main?
 create a branch that separate from the main to work on
 
-#### What does git push origin [branch-name]do?
+#### What does git push origin [branch-name] do?
 It will create a Pull Request under the [branch-name]
 
 #### Why do we make pull requests instead of just changing main directly?
@@ -52,7 +52,11 @@ It helps structure the code we create, making it more readable and easier to mai
 ## CSS
 #### How would you use CSS variables to make a reusable colour palette?
 #### How would you use flexbox to make elements sit on a single line?
-Line{ Flex-direction:row; }
+```
+Line { 
+    Flex-direction:row; 
+    }
+```
 #### How would you use grid to make a layout that automatically adds columns as the screen gets wider?
 grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 #### Why is it important to create a responsive design?
@@ -127,21 +131,28 @@ The PUT method requests that the enclosed entity be stored under the supplied UR
 request method is used to delete the specified resource
 
 #### What is the “body” of an HTTP request for?
+A request body is data sent by the client to your API.
 #### What is the “body” of an HTTP response for?
 
 ## DOM
 #### How would you get a reference to a DOM element in your JS?
+use Event.target
 #### How would you get references to multiple DOM elements at once in your JS?
 #### How would you update properties of a DOM element?
+getAttribute() and setAttribute().
 #### What’s the difference between a “property” and an “attribute”?
+An attribute is the initial state when rendered in the DOM. A property is the current state. In most cases, attributes and properties are kept in-sync automatically.
 #### What are some different ways to add content inside a DOM element?
+createElemet(). createChildNode
 #### When might the [template] element be useful?
 #### What are the different ways to add event handlers to elements?
 #### Why is addEventListener the safest way to add an event handler?
 #### How can you access submitted form values in your JS?
+pass in an event handler function into the onSubmit prop to get the inputted form values.
 
 ## Testing
 #### Why are tests useful?
+to test if all functionalities are working as desired.
 #### What is the difference between unit and integration tests?
 #### What kind of code is easier to test?
 #### Why should your tests be isolated from each other?
