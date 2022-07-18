@@ -1,6 +1,6 @@
 # FAC_Revision-quiz
 ## Git
-#### Why do we use Git?<br>
+#### Why do we use Git?
 To control and track our project code.
 
 #### What’s the difference between Git and GitHub?
@@ -107,11 +107,12 @@ An HTTP response is made by a server to a client. as a status text
 whether a specific HTTP request has been successfully completed
 
 #### What are some common status codes?
-~
-HTTP Status Code 200 - OK.
-HTTP Status Code 404 - Not Found.
-HTTP Status Code 500 - Internal Server Error.
-HTTP Status Code 503 - Service Unavailable.
+<ul>
+<li>HTTP Status Code 200 - OK.</li>
+<li>HTTP Status Code 404 - Not Found.</li>
+<li>HTTP Status Code 500 - Internal Server Error.</li>
+<li>HTTP Status Code 503 - Service Unavailable.</li>
+</ul>
 #### What are HTTP methods for?
 #### What kind of request should have a GET method?
 The HTTP GET request method is used to request a resource from the server. T/p>
