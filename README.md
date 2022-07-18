@@ -75,79 +75,79 @@ A callback function is a function passed into another function as an argument
 #### How would you use array.find() to get a single value from an array?
 
 ## Promises & fetch
-What is a promise?
+#### What is a promise?
 A promise is an object that may produce a single value some time in the future
 
-How do promises help manage asynchronous code?
-What does a promise’s.then method return?
+#### How do promises help manage asynchronous code?
+#### What does a promise’s.then method return?
 The then method returns a Promise which allows for method chaining.
 
-How could you chain promises together to avoid “callback hell”?
+#### How could you chain promises together to avoid “callback hell”?
 Multiple .then and .catch to catch any error
 
-How would you handle a fetch request that failed to get a response from the server?
-How would you handle a fetch request that received a 404 response from the server?
+#### How would you handle a fetch request that failed to get a response from the server?
+#### How would you handle a fetch request that received a 404 response from the server?
 or HTTP errors we can check the response. ok property to see if the request failed and reject the promise ourselves by calling return Promise.
 
 
-HTTP
-What is an HTTP request?
+## HTTP
+#### What is an HTTP request?
 HTTP request is made by a client, to a named host, which is located on a server.
 
-What kind of request is sent when you click a link in your browser?
+#### What kind of request is sent when you click a link in your browser?
 Your browser takes that URL, breaks out the name of the web site, and then uses the Domain Name System (DNS) to get an Internet Protocol (IP) address for the site.
 
-What kind of request is sent when you submit a form in your browser?
+#### What kind of request is sent when you submit a form in your browser?
 'POST' HTTP method
 
-What is an HTTP response?
+#### What is an HTTP response?
 An HTTP response is made by a server to a client. as a status text
 
-What does the status code of an HTTP response tell us?
+#### What does the status code of an HTTP response tell us?
 whether a specific HTTP request has been successfully completed
 
-What are some common status codes?
+#### What are some common status codes?
 ~
 HTTP Status Code 200 - OK.
 HTTP Status Code 404 - Not Found.
 HTTP Status Code 500 - Internal Server Error.
 HTTP Status Code 503 - Service Unavailable.
-What are HTTP methods for?
-What kind of request should have a GET method?
+#### What are HTTP methods for?
+#### What kind of request should have a GET method?
 The HTTP GET request method is used to request a resource from the server. T/p>
 
-What kind of request should have a POST method?
+#### What kind of request should have a POST method?
 POST is used to send data to a server to create/update a resource.
 
-What kind of request should have a PUT method?
+#### What kind of request should have a PUT method?
 The PUT method requests that the enclosed entity be stored under the supplied URI.
 
-What kind of request should have a DELETE method?
+#### What kind of request should have a DELETE method?
 request method is used to delete the specified resource
 
-What is the “body” of an HTTP request for?
-What is the “body” of an HTTP response for?
+#### What is the “body” of an HTTP request for?
+#### What is the “body” of an HTTP response for?
 
-DOM
-How would you get a reference to a DOM element in your JS?
-How would you get references to multiple DOM elements at once in your JS?
-How would you update properties of a DOM element?
-What’s the difference between a “property” and an “attribute”?
-What are some different ways to add content inside a DOM element?
-When might the [template] element be useful?
-What are the different ways to add event handlers to elements?
-Why is addEventListener the safest way to add an event handler?
-How can you access submitted form values in your JS?
+## DOM
+#### How would you get a reference to a DOM element in your JS?
+#### How would you get references to multiple DOM elements at once in your JS?
+#### How would you update properties of a DOM element?
+#### What’s the difference between a “property” and an “attribute”?
+#### What are some different ways to add content inside a DOM element?
+#### When might the [template] element be useful?
+#### What are the different ways to add event handlers to elements?
+#### Why is addEventListener the safest way to add an event handler?
+#### How can you access submitted form values in your JS?
 
-Testing
-Why are tests useful?
-What is the difference between unit and integration tests?
-What kind of code is easier to test?
-Why should your tests be isolated from each other?
-What is Test Driven Development (TDD)?
-When might TDD be a useful process to follow?
+## Testing
+#### Why are tests useful?
+#### What is the difference between unit and integration tests?
+#### What kind of code is easier to test?
+#### Why should your tests be isolated from each other?
+#### What is Test Driven Development (TDD)?
+#### When might TDD be a useful process to follow?
 
-Debugging
-What process would you take to find out why your code isn’t working?
-What tools do JS/dev tools have to help debug your code?
-At what point should you ask for someone else’s help?
+## Debugging
+#### What process would you take to find out why your code isn’t working?
+#### What tools do JS/dev tools have to help debug your code?
+#### At what point should you ask for someone else’s help?
