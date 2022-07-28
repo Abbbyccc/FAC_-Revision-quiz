@@ -1,10 +1,10 @@
 # FAC_Revision-quiz
 ## Git
 #### Why do we use Git?
-To control and track our project code.
+To control and track our project code. Git tracks the changes you make to files, so you have a record of what has been done, and you can revert to specific versions should you ever need to.
 
 #### What’s the difference between Git and GitHub?
-Git is a control system let you manage the project code history, and GitHub is cloud- base hosting service for you let you manage git repos.
+Git is a control system let you manage the project code history, and GitHub is cloud-base hosting service for you let you manage git repos.
 
 #### What happens when you clonea repository?
 You clone a full copy of all the repository to your chosen location.
@@ -13,14 +13,16 @@ You clone a full copy of all the repository to your chosen location.
 Pull changes from the origin remote, master branch and merge them to the local checked-out branch.
 
 #### How do we create a new branch on our local machine?
-Open the terminal in the project directory and enter”git checkout -b “branch name”
+Open the terminal in the project directory and enter [ git checkout -b “branch name” ] 
 
 #### How do we control which changes will be included in the next commit?
-Use “git add “the changed file name”
+Use [ git add "the changed file name" ]
 
 #### When might git add .be inappropriate?
+With [ git add .], you are adding every single file in the current folder, or structure, or anything else in the directory, you could add generated files, backups, and confgiure files which you proberbly don't want to add.
+
 #### How do we make sure our local changes don’t conflict with main?
-create a branch that separate from the main to work on
+Always ceate a branch that separate from the main to work on
 
 #### What does git push origin [branch-name] do?
 It will create a Pull Request under the [branch-name]
@@ -29,7 +31,7 @@ It will create a Pull Request under the [branch-name]
 To carefully review the code and create different version to track before merge the file into the main
 
 #### Why should you review your teammates’ pull requests?
-To double confirm there is no bug and understand other people’s work
+To double confirm there is no bug and understand other people’s work to 
 
 
 ## HTML
@@ -46,15 +48,33 @@ Semantic HTML is a coding style. It is the use of HTML markup to reinforce the s
 It helps structure the code we create, making it more readable and easier to maintain.
 
 #### What is the "form" element used for?
-"form"represents a document section containing interactive controls for submitting information.
+<form> represents a document section containing interactive controls for submitting information.
 
 
 ## CSS
 #### How would you use CSS variables to make a reusable colour palette?
-#### How would you use flexbox to make elements sit on a single line?
+Define variables with the syntax --var-name: value. Commonly done on :root (= <html>)
+for example:
 ```
-Line { 
-    Flex-direction:row; 
+:root{
+ --theme-main-color:;
+ --dark-color:
+ --light-color:
+}
+```
+and use the color variable like below
+
+h2{
+    color:var(--theme-main-color);
+}
+#### How would you use flexbox to make elements sit on a single line?
+
+first make sure all elements is under the same container class= "line-container"
+```
+.line-container { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     }
 ```
 #### How would you use grid to make a layout that automatically adds columns as the screen gets wider?
