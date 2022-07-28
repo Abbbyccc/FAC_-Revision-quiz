@@ -78,7 +78,13 @@ first make sure all elements is under the same container class= "line-container"
     }
 ```
 #### How would you use grid to make a layout that automatically adds columns as the screen gets wider?
-grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+add following syntax to css 
+```
+grid-container{
+    isplay: grid;
+    grid-template-columns: repeat(repeat(auto-fill, minmax(100px, 1fr)));;
+}
+```
 #### Why is it important to create a responsive design?
 Because nowadays people use all different devices with different sizes to browse the web pages How would you structure your CSS to make it “mobile-first”?
 
@@ -87,7 +93,10 @@ Because nowadays people use all different devices with different sizes to browse
 They can easily be accessed by outside manipulation
 
 #### How might you make a long, complex chunk of code easier to read?
-break down long codes into small functions
+- Reuse What Will Be Used More Than Once. "Don't repeat yourself"
+- Make Modules, Classes, or Components as Small as Possible
+- Automate Rules and Guidelines for Your Code
+- Write code Like You’re in a Team — Even a One-Person Team
 
 #### What is a “callback”?
 A callback function is a function passed into another function as an argument
@@ -95,14 +104,36 @@ A callback function is a function passed into another function as an argument
 
 ## Array methods
 #### How would you use array.map() to create a new array with transformed values?
+
+```
+const array1=[1,2,3,4,5]
+const transformed=array1.map(x=>x+1)
+console.log(transformed) // [2,3,4,5,6]
+
+```
 #### How would you use array.filter() to create a new array with certain values removed?
+
+```
+const array1=[1,2,3,4,5]
+const filtered=array1.filter(x=>x>3)
+console.log(filtered) // [4,5]
+```
+
 #### How would you use array.find() to get a single value from an array?
+
+```
+const array1 = [5, 12, 8, 130, 44];
+const found = array1.find(element => element > 10);
+console.log(found); // 12
+```
 
 ## Promises & fetch
 #### What is a promise?
 A promise is an object that may produce a single value some time in the future
 
 #### How do promises help manage asynchronous code?
+Inside an async function you can use the await keyword before a call to a function that returns a promise. This makes the code wait at that point until the promise is settled, at which point the fulfilled value of the promise is treated as a return value, or the rejected value is thrown.
+
 #### What does a promise’s.then method return?
 The then method returns a Promise which allows for method chaining.
 
@@ -110,8 +141,10 @@ The then method returns a Promise which allows for method chaining.
 Multiple .then and .catch to catch any error
 
 #### How would you handle a fetch request that failed to get a response from the server?
+For HTTP errors we can check the response. ok property to see if the request failed and reject the promise ourselves by calling return Promise.
+
 #### How would you handle a fetch request that received a 404 response from the server?
-or HTTP errors we can check the response. ok property to see if the request failed and reject the promise ourselves by calling return Promise.
+
 
 
 ## HTTP
@@ -131,12 +164,14 @@ An HTTP response is made by a server to a client. as a status text
 whether a specific HTTP request has been successfully completed
 
 #### What are some common status codes?
+```
 <ul>
 <li>HTTP Status Code 200 - OK.</li>
 <li>HTTP Status Code 404 - Not Found.</li>
 <li>HTTP Status Code 500 - Internal Server Error.</li>
 <li>HTTP Status Code 503 - Service Unavailable.</li>
 </ul>
+```
 #### What are HTTP methods for?
 #### What kind of request should have a GET method?
 The HTTP GET request method is used to request a resource from the server. T/p>
