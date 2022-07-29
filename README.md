@@ -186,30 +186,58 @@ The PUT method requests that the enclosed entity be stored under the supplied UR
 request method is used to delete the specified resource
 
 #### What is the “body” of an HTTP request for?
-A request body is data sent by the client to your API.
+A request body is an optional data sent by the client to your API.
 #### What is the “body” of an HTTP response for?
+A response body is an optional data sent by the API to the client.
+
+** Most HTTP requests with bodies use POST or PUT request method. The message body part is optional for an HTTP message but if it is available then it is used to carry the entity-body associated with the request or response
 
 ## DOM
 #### How would you get a reference to a DOM element in your JS?
-use Event.target
+there are different ways to do this, by giving the element a class, id, or simply just query by the element tag.
+-document.querySelector("id name or class name with with CSS selector or just the element tag name (h2,p..etc");
+-document.getElementsByTagName('tag name');
+-document.getElementById("id name");
+-document.getElementsByClassName("class name");
 #### How would you get references to multiple DOM elements at once in your JS?
+-document.querySelectorAll();
+-document.getElementsByTagName('tag name');
+-document.getElementsByClassName("class name");
 #### How would you update properties of a DOM element?
-getAttribute() and setAttribute().
+-getAttribute()  
+-setAttribute().
 #### What’s the difference between a “property” and an “attribute”?
 An attribute is the initial state when rendered in the DOM. A property is the current state. In most cases, attributes and properties are kept in-sync automatically.
 #### What are some different ways to add content inside a DOM element?
-createElemet(). createChildNode
+-createElemet("element tage name")
+-createChildNode(data)
+-createTextNode(data)
 #### When might the [template] element be useful?
+when the content needs to be added to the DOM repeatedly
 #### What are the different ways to add event handlers to elements?
+-element.addEventListener(type,eventListener);
+-Inline events: onclick=""
+
 #### Why is addEventListener the safest way to add an event handler?
+-The addEventListener() method attaches an event handler to the specified element.
+-The addEventListener() method attaches an event handler to an element without overwriting existing event handlers.
+-You can add many event handlers to one element.
+-You can add many event handlers of the same type to one element, i.e two "click" events.
+-You can add event listeners to any DOM object not only HTML elements. i.e the window object.
+-The addEventListener() method makes it easier to control how the event reacts to bubbling.
 #### How can you access submitted form values in your JS?
 pass in an event handler function into the onSubmit prop to get the inputted form values.
 
 ## Testing
 #### Why are tests useful?
-to test if all functionalities are working as desired.
+-To test if all functionalities are working as desired.
+-To save time
 #### What is the difference between unit and integration tests?
+
+##### Integration testing: usually involves testing a particular functionality—usually referred to as a module—that has dependencies on another functionality (e.g., a function calling another function). The goal of these tests is to check the connectivity and communication between different components of the application.
+
 #### What kind of code is easier to test?
+Good testing code should be reproducible and independent from external factors such as the environment or running order.
 #### Why should your tests be isolated from each other?
 #### What is Test Driven Development (TDD)?
 #### When might TDD be a useful process to follow?
