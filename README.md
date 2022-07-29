@@ -233,8 +233,10 @@ pass in an event handler function into the onSubmit prop to get the inputted for
 -To test if all functionalities are working as desired.
 -To save time
 #### What is the difference between unit and integration tests?
+##### Unit testing:
 
-##### Integration testing: usually involves testing a particular functionality—usually referred to as a module—that has dependencies on another functionality (e.g., a function calling another function). The goal of these tests is to check the connectivity and communication between different components of the application.
+##### Integration testing: 
+usually involves testing a particular functionality—usually referred to as a module—that has dependencies on another functionality (e.g., a function calling another function). The goal of these tests is to check the connectivity and communication between different components of the application.
 
 #### What kind of code is easier to test?
 Good testing code should be reproducible and independent from external factors such as the environment or running order.
