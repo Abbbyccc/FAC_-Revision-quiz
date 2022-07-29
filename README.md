@@ -242,9 +242,17 @@ usually involves testing a particular functionality—usually referred to as a m
 Good testing code should be reproducible and independent from external factors such as the environment or running order.
 #### Why should your tests be isolated from each other?
 #### What is Test Driven Development (TDD)?
+Test-driven development is a software development process relying on software requirements being converted to test cases before software is fully developed, and tracking all software development by repeatedly testing the software against all test cases.
+
 #### When might TDD be a useful process to follow?
+when you have a pure logic function that you need to write. When the work you need to do has a clearly defined set of expected inputs and outputs
 
 ## Debugging
 #### What process would you take to find out why your code isn’t working?
 #### What tools do JS/dev tools have to help debug your code?
+Outputting JavaScript debugging messages to the browser
+-alert()
+-console.log()
+-debugger
+
 #### At what point should you ask for someone else’s help?
