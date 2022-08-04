@@ -145,8 +145,6 @@ For HTTP errors we can check the response. ok property to see if the request fai
 
 #### How would you handle a fetch request that received a 404 response from the server?
 
-
-
 ## HTTP
 #### What is an HTTP request?
 HTTP request is made by a client, to a named host, which is located on a server.
